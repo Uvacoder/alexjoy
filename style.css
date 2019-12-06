@@ -372,7 +372,8 @@ button a {
   }
 
   .wellnessTitle,
-  .videoPageTitle {
+  .videoPageTitle,
+  .photoPageTitle {
     grid-row: 1;
     grid-column: 1 / span 2;
     font-family: 'BeautyDream';
@@ -400,7 +401,7 @@ button a {
     grid-row: 2;
     grid-column-start: 2;
     grid-column-end: 4;
-    margin: 0;
+    margin: 0 0 3%;
   }
 
   .allPhotos {
@@ -430,18 +431,19 @@ button a {
   .photoWrapper {
     background-color: gainsboro;
     height: 100%;
-    width: 100%;
-    margin: 0;
+    margin: auto;
   }
 
   .photoWrapper:hover {
     height: 110%;
-    width: 110%;
     transition: all 0.9s ease;
   }
 
   .thumb {
     height: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 
   .media,
