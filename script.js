@@ -53,3 +53,19 @@ $('#viewDemo').click(function(e) {
 });
 
 $(handlePage);
+
+const nameLine = document.querySelectorAll('.nameLine');
+
+function isScrolled() {
+  const docViewTop = $(window).scrollTop();
+  return docViewTop > 0;
+}
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if (isScrolled() === true) {
+      $(nameLine).addClass('moveToTop');
+    } else {
+      $(nameLine).removeClass('moveToTop');
+    }
+  });
+});
