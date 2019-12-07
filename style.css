@@ -6,13 +6,17 @@ body {
   margin: 0;
   text-align: center;
   font-size: 14px;
-  font-family: 'Sacramento';
   color: black;
 }
 
 @font-face {
   font-family: 'HelNeue';
   src: url('HelveticaNeueMed.ttf');
+}
+
+@font-face {
+  font-family: 'HelNeueLight';
+  src: url('HelveticaNeueThin.ttf');
 }
 
 .navBarMobile {
@@ -146,7 +150,7 @@ button a {
   body {
     font-size: 18px;
     /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'Raleway', sans-serif;
+    font-family: 'HelNeueLight';
   }
   h1 {
     font-size: 2.6em;
@@ -210,7 +214,8 @@ button a {
     margin: 15px;
     padding: 1rem 0;
     font-weight: 300;
-    color: #90dabf;
+    color: rgb(86, 86, 86);
+    /* color: #90dabf; */
     text-decoration: none;
     transition: none;
   }
@@ -282,7 +287,7 @@ button a {
   .contactForm input,
   .contactForm textarea {
     font-size: 14px;
-    font-family: 'Raleway';
+    font-family: 'HelNeue';
     padding: 10px;
     opacity: 80%;
     border: none;
@@ -481,6 +486,7 @@ button a {
 
   .activeMedia .activeOverlay,
   .activePhoto .activeOverlay {
+    font-family: 'HelNeue';
     opacity: 0.85;
     width: 82%;
     height: 12%;
