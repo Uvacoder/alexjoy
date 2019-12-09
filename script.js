@@ -60,6 +60,7 @@ function isScrolled() {
   const docViewTop = $(window).scrollTop();
   return docViewTop > 0;
 }
+
 $(document).ready(function() {
   $(window).scroll(function() {
     if (isScrolled() === true) {
@@ -67,5 +68,14 @@ $(document).ready(function() {
     } else {
       $(nameLine).removeClass('moveToTop');
     }
+  });
+});
+
+$(document).ready(function() {
+  $('.allPhotos').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows: true
   });
 });
