@@ -71,11 +71,11 @@ $(document).ready(function() {
   });
 });
 
-$(document).ready(function() {
-  $('.allPhotos').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    arrows: true
-  });
-});
+// $(document).ready(function() {
+//   $('.allPhotos').slick({
+//     infinite: true,
+//     slidesToShow: 4,
+//     slidesToScroll: 4,
+//     arrows: true
+//   });
+// });
