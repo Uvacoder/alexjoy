@@ -321,7 +321,8 @@ button a {
   }
 
   .sendContactForm:hover {
-    background-color: rgb(37, 170, 145);
+    background-color: #bbd4c9;
+    color: rgb(73, 72, 72);
     cursor: pointer;
     transition: 0.3s ease-in-out;
   }
@@ -574,6 +575,7 @@ button a {
   .activeMedia .activeOverlay,
   .activePhoto .activeOverlay {
     font-family: 'Montserrat';
+    text-decoration: none;
     opacity: 0.9;
     width: 82%;
     height: 12%;
@@ -602,6 +604,13 @@ button a {
   .activeOverlay {
     font-size: 22px;
     letter-spacing: 1px;
+    transition: all 0.5s ease;
+  }
+
+  .activeOverlay:hover {
+    background-color: #bbd4c9;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
   }
 
   /* .overlayText {
