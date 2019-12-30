@@ -8,16 +8,16 @@ body {
   font-size: 14px;
   color: black;
 }
-
+/*
 @font-face {
-  font-family: 'HelNeue';
+  font-family: 'Montserrat';
   src: url('HelveticaNeueMed.ttf');
 }
 
 @font-face {
-  font-family: 'HelNeueLight';
+  font-family: 'Montserrat';
   src: url('HelveticaNeueThin.ttf');
-}
+} */
 
 .navBarMobile {
   width: 100%;
@@ -34,7 +34,7 @@ body {
   right: 35px;
   top: 20px;
   cursor: pointer;
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
 }
 .menuButton .btn-line {
   width: 28px;
@@ -42,7 +42,7 @@ body {
   margin: 0 0 5px 0;
   background: #fff;
   background-color: #fff;
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
 }
 .menuButton.close {
   transform: rotate(180deg);
@@ -84,14 +84,14 @@ body {
   color: #fff;
   list-style: none;
   transform: translate3d(0, -100%, 0);
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
 }
 .navigationBar.show {
   transform: translate3d(0, 0%, 0);
 }
 .menu .navItem {
   transform: translate3d(300px, 0, 0);
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
 }
 .menu .navItem.show {
   transform: translate3d(0, 0, 0);
@@ -148,9 +148,9 @@ button a {
 
 @media screen and (min-width: 760px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
     /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'HelNeueLight';
+    font-family: 'Montserrat';
   }
   h1 {
     font-size: 2.6em;
@@ -196,10 +196,11 @@ button a {
     transition: all 0.9s ease;
     transform: scale(0);
     margin: auto 0 auto 10px;
-    font-family: 'HelNeue';
-    color: rgb(86, 86, 86);
+    font-family: 'Montserrat';
+    color: rgb(73, 72, 72);
+    font-size: 1.3em;
     width: 15vw;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
   }
 
   .moveToTop {
@@ -210,25 +211,25 @@ button a {
 
   .menu .pageLink {
     align-items: center;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    text-transform: uppercase;
     margin: 15px;
     padding: 1rem 0;
-    font-weight: 300;
-    color: rgb(86, 86, 86);
-    /* color: #90dabf; */
+    letter-spacing: 0.05em;
+    color: rgb(73, 72, 72);
     text-decoration: none;
-    transition: none;
+    transition: all 0.4s ease-in-out;
   }
 
   .pageLink:hover {
     font-size: 1.5em;
-    transition: 0.5s;
+    transition: all 0.4s ease-in-out;
     margin: 10px;
   }
 
-  .menu .pageLink {
+  /* .menu .pageLink {
     text-transform: none;
-  }
+  } */
 
   .menu .navItem {
     margin: 3.5%;
@@ -241,16 +242,9 @@ button a {
   }
 
   .homePage,
-  .contactPage {
+  .contactSection {
     height: 100vh;
     width: 100vw;
-    /* background-color: white; */
-    /* background-image: url('sparkle.jpg'); */
-    /* background: linear-gradient(whitesmoke, rgb(249, 136, 123)); */
-    /* background-color: rgb(106, 106, 106); */
-    /* background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
     display: grid;
   }
 
@@ -258,37 +252,51 @@ button a {
     grid-template-rows: 20% 70% 10%;
   }
 
-  .contactPage {
+  .contactSection {
     grid-template-columns: 60% 40%;
-    grid-template-rows: 95% 5%;
+    grid-template-rows: 20% 75% 5%;
+  }
+
+  .videoPage {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 80% 5%;
+  }
+
+  .actPhoto {
+    width: 50%;
+    grid-column: 2;
+    grid-row: 2;
+    margin: auto;
   }
 
   .contactPhoto {
     justify-self: left;
-    width: 65%;
+    width: 60%;
     grid-column: 2;
+    grid-row: 2;
+    margin-left: 10%;
     margin-top: auto;
     margin-bottom: auto;
   }
 
   .contactSection {
-    margin-top: 15%;
+    margin-top: 10%;
   }
 
   .contactForm {
     width: 80%;
     grid-column: 1;
+    grid-row: 2;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
   }
 
   .contactForm input,
   .contactForm textarea {
-    font-size: 14px;
-    font-family: 'HelNeue';
-    padding: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    padding: 12px;
     opacity: 80%;
     border: none;
     border-radius: 3px;
@@ -298,7 +306,7 @@ button a {
 
   .sendContactForm {
     font-size: 16px;
-    font-family: 'HelNeue';
+    font-family: 'Montserrat';
     letter-spacing: 0.2em;
     padding: 15px 20px;
     border-radius: 3px;
@@ -306,9 +314,16 @@ button a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    background-color: rgb(86, 86, 86);
+    background-color: rgb(73, 72, 72);
     border: none;
     color: white;
+    transition: 0.3s ease-in-out;
+  }
+
+  .sendContactForm:hover {
+    background-color: rgb(37, 170, 145);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
   }
 
   .homePageOverlay {
@@ -323,19 +338,13 @@ button a {
     float: bottom right;
   }
 
-  .titleLine,
-  .videoPageTitle {
+  .titleLine {
     grid-column: 1 / span 2;
-    font-family: 'HelNeue';
+    grid-row: 1;
+    font-family: 'Montserrat';
     font-size: 3.5em;
     margin: 20px 0;
-    color: rgb(86, 86, 86);
-  }
-
-  .allVideos {
-    grid-row: 2;
-    grid-column: 1 / span 2;
-    margin: 3% auto;
+    color: rgb(73, 72, 72);
   }
 
   .titleSection {
@@ -344,10 +353,13 @@ button a {
   }
 
   .tagline {
-    font-size: 1.3em;
+    font-weight: 300;
+    font-size: 1.1em;
+    text-transform: uppercase;
     margin: 5px;
     text-align: center;
-    color: rgb(86, 86, 86);
+    letter-spacing: 0.05em;
+    color: rgb(73, 72, 72);
   }
 
   .mainTitleLine,
@@ -355,24 +367,28 @@ button a {
     font-size: 2.5em;
     margin: 10px 0;
     /* font-family: 'Sacramento', cursive; */
-    font-family: 'HelNeue';
-    letter-spacing: 0.3em;
-    color: rgb(86, 86, 86);
+    font-family: 'Montserrat';
+    letter-spacing: 0.2em;
+    color: rgb(73, 72, 72);
     text-align: center;
   }
 
+  .contactTitleLine {
+    grid-column: 1 / span 2;
+  }
+
   .mainTitleLine {
-    font-size: 3.5em;
+    font-size: 2.8em;
+    font-weight: 700;
   }
 
   .mainTitleSection {
-    margin: 10% 60% 0 6%;
+    margin: 15% 55% 0 0;
     color: black;
     text-align: left;
   }
 
-  .wellnessPage,
-  .videoPage {
+  .wellnessPage {
     width: 100vw;
     background-size: cover;
     display: grid;
@@ -396,11 +412,15 @@ button a {
   .photoPageTitle {
     grid-row: 1;
     grid-column: 1 / span 2;
-    font-family: 'HelNeue';
-    color: rgb(86, 86, 86);
+    font-family: 'Montserrat';
+    color: rgb(73, 72, 72);
     font-size: 3em;
     margin: 8% 0 0;
     letter-spacing: 0.3em;
+  }
+
+  .videoPageTitle {
+    margin: 5% 0;
   }
 
   .videoPage,
@@ -409,7 +429,6 @@ button a {
     height: 100vh;
     width: 100vw;
     background-color: white;
-    background-size: cover;
     display: grid;
   }
 
@@ -511,18 +530,21 @@ button a {
     background-color: gainsboro;
     height: 450px;
     width: 600px;
-    margin: 20px;
+    margin: auto;
+    grid-column: 1;
+    grid-row: 2;
   }
 
   .photo,
   .photoWrapper {
     height: 100%;
     margin: auto;
+    transition: all 0.8s ease-in-out;
   }
 
   .photoWrapper:hover {
     height: 110%;
-    transition: all 0.9s ease;
+    transition: all 0.8s ease-in-out;
   }
 
   .thumb {
@@ -536,7 +558,7 @@ button a {
   .media,
   .activeMedia,
   .activePhoto {
-    width: 24%;
+    width: 30%;
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -551,17 +573,15 @@ button a {
 
   .activeMedia .activeOverlay,
   .activePhoto .activeOverlay {
-    font-family: 'HelNeue';
-    opacity: 0.85;
+    font-family: 'Montserrat';
+    opacity: 0.9;
     width: 82%;
     height: 12%;
-    margin-top: 40%;
-    outline: 6px solid rgb(255, 255, 255, 0.85);
-    outline-offset: 3px;
+    margin-top: 50%;
   }
 
   .activePhoto {
-    width: 24%;
+    width: 30%;
   }
 
   .overlay,
@@ -576,6 +596,7 @@ button a {
     background: #fff;
     color: #151e3f;
     transition: all 0.9s ease;
+    transition-timing-function: ease-in;
   }
 
   .activeOverlay {
