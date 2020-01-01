@@ -258,15 +258,17 @@ button a {
   }
 
   .videoPage {
+    display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 15% 80% 5%;
+    grid-template-rows: 15% 50% 50% 5%;
   }
 
   .actPhoto {
     width: 50%;
     grid-column: 2;
     grid-row: 2;
-    margin: auto;
+    margin: auto 30px;
+    justify-self: left;
   }
 
   .contactPhoto {
@@ -280,7 +282,7 @@ button a {
   }
 
   .contactSection {
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   .contactForm {
@@ -366,7 +368,7 @@ button a {
   .mainTitleLine,
   .contactTitleLine {
     font-size: 2.5em;
-    margin: 10px 0;
+    margin: 10% 0 0;
     /* font-family: 'Sacramento', cursive; */
     font-family: 'Montserrat';
     letter-spacing: 0.2em;
@@ -375,6 +377,7 @@ button a {
   }
 
   .contactTitleLine {
+    grid-row: 1;
     grid-column: 1 / span 2;
   }
 
@@ -424,7 +427,6 @@ button a {
     margin: 5% 0;
   }
 
-  .videoPage,
   .photoGallery,
   .wellnessLinks {
     height: 100vh;
@@ -433,23 +435,35 @@ button a {
     display: grid;
   }
 
-  .photoGallery,
+  .photoGallery {
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 15% 70% 15%;
+  }
+
   .wellnessLinks {
-    grid-template-rows: 10% 10% 70% 10%;
+    grid-template-rows: 10% 80% 10%;
     grid-template-columns: 10% 40% 40% 10%;
   }
 
   .photoPageTitle {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+    margin: 5% auto 0;
+  }
+
+  .container-fluid {
+    background-color: pink;
+    display: none;
+  }
+
+  .instagramGrid {
     grid-row: 2;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    margin: 0 0 3%;
+    grid-column: 2;
   }
 
   .allPhotos {
     justify-content: space-evenly;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row: 2;
     grid-column-start: 2;
     grid-column-end: 4;
     /* display: flex; */
@@ -527,13 +541,21 @@ button a {
     grid-gap: 2px;
   }
 
-  .video {
+  .actInfo {
+    grid-column: 1;
+    grid-row: 2;
+    margin: auto 30px;
+    justify-self: right;
+    text-align: right;
+  }
+
+  .reel {
     background-color: gainsboro;
     height: 450px;
     width: 600px;
-    margin: auto;
-    grid-column: 1;
-    grid-row: 2;
+    margin: 40px auto 20px;
+    grid-column: 1 / span 2;
+    grid-row: 3;
   }
 
   .photo,
