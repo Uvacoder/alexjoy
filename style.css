@@ -201,7 +201,7 @@ button a {
 
   .menu .pageLink {
     align-items: center;
-    font-size: 1.1em;
+    font-size: 1em;
     text-transform: uppercase;
     margin: 15px;
     padding: 1rem 0;
@@ -212,7 +212,7 @@ button a {
   }
 
   .pageLink:hover {
-    font-size: 1.5em;
+    font-size: 1.3em;
     transition: all 0.4s ease-in-out;
     margin: 10px;
   }
@@ -252,7 +252,7 @@ button a {
     display: grid;
     margin: 1%;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 15% 50% 50% 5%;
+    grid-template-rows: 15% 50% 40% 5%;
   }
 
   .actPhoto {
@@ -349,7 +349,7 @@ button a {
 
   .tagline {
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 1em;
     text-transform: uppercase;
     margin: 5px;
     text-align: center;
@@ -359,7 +359,7 @@ button a {
 
   .mainTitleLine,
   .contactTitleLine {
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 10% 0 0;
     /* font-family: 'Sacramento', cursive; */
     font-family: 'Montserrat';
@@ -369,12 +369,14 @@ button a {
   }
 
   .contactTitleLine {
+    margin: 0;
+    padding: 2%;
     grid-row: 1;
     grid-column: 1 / span 2;
   }
 
   .mainTitleLine {
-    font-size: 2.8em;
+    font-size: 2.5em;
     font-weight: 700;
   }
 
@@ -398,7 +400,7 @@ button a {
   }
 
   .wellnessBlurb {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 2em;
     padding: 10px;
   }
@@ -410,7 +412,7 @@ button a {
     grid-column: 1 / span 2;
     font-family: 'Montserrat';
     color: rgb(73, 72, 72);
-    font-size: 3em;
+    font-size: 2em;
     margin: 8% 0 0;
     padding: 2%;
     letter-spacing: 0.3em;
@@ -451,6 +453,7 @@ button a {
   }
 
   .instagramGrid {
+    padding: 2%;
     grid-row: 2;
     grid-column: 2;
   }
@@ -538,18 +541,15 @@ button a {
   .actInfo {
     grid-column: 1;
     grid-row: 2;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 2em;
-    margin: auto 30px auto 40%;
+    margin: auto 30px auto 35%;
     justify-self: right;
     text-align: right;
   }
 
   .reel {
-    background-color: gainsboro;
-    height: 450px;
-    width: 600px;
-    margin: 40px auto 20px;
+    margin: auto;
     grid-column: 1 / span 2;
     grid-row: 3;
   }
@@ -688,6 +688,9 @@ button a {
     margin: 0 5%;
     text-align: center;
   }
+  .contactTitleLine {
+    margin: 6% 0 0;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -695,9 +698,9 @@ button a {
     margin-left: 2%;
   }
   .mainTitleLine {
-    font-size: 3.3em;
+    font-size: 3em;
   }
   .tagline {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
