@@ -8,16 +8,6 @@ body {
   font-size: 14px;
   color: black;
 }
-/*
-@font-face {
-  font-family: 'Montserrat';
-  src: url('HelveticaNeueMed.ttf');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('HelveticaNeueThin.ttf');
-} */
 
 .navBarMobile {
   width: 100%;
@@ -149,7 +139,6 @@ button a {
 @media screen and (min-width: 760px) {
   body {
     font-size: 16px;
-    /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Montserrat';
   }
   h1 {
@@ -171,12 +160,8 @@ button a {
     visibility: visible;
     flex-direction: row;
     display: flex;
-    /* background-image: url('sparkle.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
     background-color: white;
-    background-attachment: fixed;
+    position: fixed;
     z-index: 99;
   }
 
@@ -246,6 +231,7 @@ button a {
     height: 100vh;
     width: 100vw;
     display: grid;
+    overflow: hidden;
   }
 
   .homePage {
@@ -257,8 +243,9 @@ button a {
     grid-template-rows: 20% 75% 5%;
   }
 
-  .videoPage {
+  .actingPage {
     display: grid;
+    margin: 1%;
     grid-template-columns: 50% 50%;
     grid-template-rows: 15% 50% 50% 5%;
   }
@@ -330,15 +317,15 @@ button a {
   }
 
   .homePageOverlay {
-    margin-top: 8vh;
-    height: 92vh;
-    width: 100vw;
+    /* margin-top: 5vh; */
+    height: 100vh;
+    width: 80vw;
+    margin-left: 5%;
     /* margin-top: 10vh; */
     background-image: url('AlexPucci2.png');
     background-repeat: no-repeat;
     background-position: right;
-    background-size: contain;
-    float: bottom right;
+    background-size: cover;
   }
 
   .titleLine {
@@ -387,7 +374,7 @@ button a {
   }
 
   .mainTitleSection {
-    margin: 15% 55% 0 0;
+    margin: 15% 60% 0 3%;
     color: black;
     text-align: left;
   }
@@ -412,7 +399,7 @@ button a {
   }
 
   .wellnessTitle,
-  .videoPageTitle,
+  .actingPageTitle,
   .photoPageTitle {
     grid-row: 1;
     grid-column: 1 / span 2;
@@ -420,10 +407,11 @@ button a {
     color: rgb(73, 72, 72);
     font-size: 3em;
     margin: 8% 0 0;
+    padding: 2%;
     letter-spacing: 0.3em;
   }
 
-  .videoPageTitle {
+  .actingPageTitle {
     margin: 5% 0;
   }
 
@@ -438,6 +426,7 @@ button a {
   .photoGallery {
     grid-template-rows: 20% 80%;
     grid-template-columns: 15% 70% 15%;
+    overflow: hidden;
   }
 
   .wellnessLinks {
@@ -635,27 +624,6 @@ button a {
     opacity: 1;
   }
 
-  /* .overlayText {
-    transition: all 0.9s ease;
-    transform: scale(0.1);
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 1px;
-  }
-
-  .media:hover .overlay {
-    opacity: 0.8;
-    width: 82%;
-    height: 10%;
-    margin-top: 70%;
-    transition: all 0.5s ease;
-  }
-
-  .media:hover .overlayText {
-    transform: scale(1);
-    transition: all 0.9s ease;
-  } */
-
   .footer {
     grid-column: 1 / span 2;
     grid-row: 2;
@@ -678,23 +646,51 @@ button a {
 
 @media screen and (min-width: 1000px) {
   .homePageOverlay {
-    width: 80vw;
-    background-position: right;
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .homePageOverlay {
-    width: 80vw;
-    background-position: right;
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  .homePageOverlay {
+    margin-left: 10%;
+    margin-top: 8vh;
+    height: 92vh;
     width: 100vw;
-    background-position: right;
-    margin-right: 0;
+    background-size: contain;
+    float: bottom right;
+  }
+  .mainTitleSection {
+    margin: 8% 60% 0 1%;
+  }
+  .mainTitleLine,
+  .tagline {
+    margin: 0 10%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1370px) {
+  .homePageOverlay {
+    margin-left: 5%;
+    margin-top: 8vh;
+    height: 92vh;
+    width: 100vw;
+    background-size: contain;
+    float: bottom right;
+  }
+  .mainTitleSection {
+    margin-left: 3%;
+    margin-right: 55%;
+  }
+  .mainTitleLine,
+  .tagline {
+    margin: 0 5%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .homePageOverlay {
+    margin-left: 2%;
+  }
+  .mainTitleLine {
+    font-size: 3.3em;
+  }
+  .tagline {
+    font-size: 1.3em;
   }
 }
