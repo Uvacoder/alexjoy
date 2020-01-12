@@ -398,7 +398,7 @@ button a {
   }
 
   .wellnessBlurb {
-    font-size: 22px;
+    font-size: 1.2em;
     line-height: 2em;
     padding: 10px;
   }
@@ -538,7 +538,9 @@ button a {
   .actInfo {
     grid-column: 1;
     grid-row: 2;
-    margin: auto 30px;
+    font-size: 1.2em;
+    line-height: 2em;
+    margin: auto 30px auto 40%;
     justify-self: right;
     text-align: right;
   }
