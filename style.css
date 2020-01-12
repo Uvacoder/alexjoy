@@ -257,10 +257,10 @@ button a {
 
   .actPhoto {
     width: 50%;
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2;
     margin: auto 30px;
-    justify-self: left;
+    justify-self: right;
   }
 
   .contactPhoto {
@@ -349,7 +349,7 @@ button a {
 
   .tagline {
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.1em;
     text-transform: uppercase;
     margin: 5px;
     text-align: center;
@@ -400,7 +400,7 @@ button a {
   }
 
   .wellnessBlurb {
-    font-size: 1.1em;
+    font-size: 0.95em;
     line-height: 2em;
     padding: 10px;
   }
@@ -539,13 +539,13 @@ button a {
   }
 
   .actInfo {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 2;
-    font-size: 1.1em;
+    font-size: 0.95em;
     line-height: 2em;
-    margin: auto 30px auto 35%;
-    justify-self: right;
-    text-align: right;
+    margin: auto 35% auto 30px;
+    justify-self: left;
+    text-align: left;
   }
 
   .reel {
@@ -701,6 +701,6 @@ button a {
     font-size: 3em;
   }
   .tagline {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 }
