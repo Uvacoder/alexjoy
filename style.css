@@ -182,13 +182,18 @@ button a {
   display: none;
 }
 
+.actingPageTitle {
+  margin-top: 15%;
+}
+
 .videoReel {
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
 }
 
-.wellnessBlurb {
+.wellnessBlurb,
+.actInfo {
   margin: 20px;
 }
 
@@ -708,7 +713,7 @@ button a {
     opacity: 0.9;
     width: 82%;
     height: 12%;
-    margin-top: 50%;
+    margin: 50% auto 0 auto;
   }
 
   .activePhoto {

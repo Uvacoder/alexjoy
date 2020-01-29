@@ -22,12 +22,6 @@ function toggleMenu() {
   }
 }
 
-function handleIconClick() {
-  $('#email').on('click', function() {
-    $('.displayInfo').html(`<h2>cgreffly@gmail.com</h2>`);
-  });
-}
-
 $('nav')
   .find('.pageLink')
   .click(function(e) {
@@ -38,7 +32,7 @@ $('nav')
     showMenu = false;
     let section = $(this).attr('href');
     $('html, body').animate({
-      scrollTop: $(section).offset().top
+      scrollTop: $(section).offset().top - 40
     });
   });
 
@@ -70,12 +64,3 @@ $(document).ready(function() {
     }
   });
 });
-
-// $(document).ready(function() {
-//   $('.allPhotos').slick({
-//     infinite: true,
-//     slidesToShow: 4,
-//     slidesToScroll: 4,
-//     arrows: true
-//   });
-// });
