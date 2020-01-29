@@ -174,7 +174,7 @@ button a {
 }
 
 .contactSection {
-  height: 90%;
+  height: 85%;
 }
 
 .actPhoto,
@@ -198,14 +198,11 @@ button a {
 
 .thumb {
   width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .photoWrapper {
   width: 85vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
 }
 
 .activeMedia .activeOverlay,
@@ -215,10 +212,9 @@ button a {
   opacity: 0.9;
   width: 70%;
   height: 12%;
-  margin: 50% auto 0 auto;
+  margin: 50% 15% 0;
 }
 
-.overlay,
 .activeOverlay {
   opacity: 0;
   position: absolute;
@@ -719,7 +715,6 @@ button a {
     width: 30%;
   }
 
-  .overlay,
   .activeOverlay {
     opacity: 0;
     position: absolute;
