@@ -188,6 +188,10 @@ button a {
   margin-right: auto;
 }
 
+.wellnessBlurb {
+  margin: 20px;
+}
+
 .wellnessLinks {
   width: 100vw;
 }
@@ -202,6 +206,31 @@ button a {
   width: 85vw;
   margin-left: auto;
   margin-right: auto;
+}
+
+.activeMedia .activeOverlay,
+.activePhoto .activeOverlay {
+  font-family: 'Montserrat';
+  text-decoration: none;
+  opacity: 0.9;
+  width: 70%;
+  height: 12%;
+  margin: 50% auto 0 auto;
+}
+
+.overlay,
+.activeOverlay {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 60%;
+  background: #fff;
+  color: #151e3f;
+  transition: all 0.9s ease;
+  transition-timing-function: ease-in;
 }
 
 .contactForm {
@@ -229,9 +258,7 @@ button a {
   padding: 15px 20px;
   border-radius: 3px;
   width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
+  margin: 15px auto;
   background-color: rgb(73, 72, 72);
   border: none;
   color: white;
