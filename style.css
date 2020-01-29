@@ -169,11 +169,19 @@ button a {
   margin: 10px;
 }
 
-.actingPage,
-.actPhoto {
+.contactPage {
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: contain;
+}
+
+.actPhoto,
+.contactPhoto {
+  display: none;
+}
+
+.videoReel {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 760px) {
@@ -292,6 +300,7 @@ button a {
   }
 
   .actPhoto {
+    display: block;
     width: 50%;
     grid-column: 1;
     grid-row: 2;
@@ -299,7 +308,13 @@ button a {
     justify-self: right;
   }
 
+  .videoReel {
+    width: 100vw;
+    margin-top: 4%;
+  }
+
   .contactPhoto {
+    display: block;
     justify-self: left;
     width: 50%;
     grid-column: 2;
