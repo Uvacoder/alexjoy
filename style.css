@@ -184,6 +184,26 @@ button a {
   margin-right: auto;
 }
 
+.wellnessLinks {
+  width: 100vw;
+}
+
+.thumb {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photoWrapper {
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .activeMedia {
+  width: 100vw;
+} */
+
 @media screen and (min-width: 760px) {
   body {
     font-size: 16px;
@@ -620,6 +640,7 @@ button a {
   }
 
   .thumb {
+    width: auto;
     height: 100%;
     left: 0;
     right: 0;
