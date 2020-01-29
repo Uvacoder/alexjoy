@@ -170,7 +170,11 @@ button a {
 }
 
 .contactPage {
-  height: 100vh;
+  height: 85vh;
+}
+
+.contactSection {
+  height: 90%;
 }
 
 .actPhoto,
@@ -200,9 +204,43 @@ button a {
   margin-right: auto;
 }
 
-/* .activeMedia {
-  width: 100vw;
-} */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  margin: 0 8%;
+}
+
+.contactForm input,
+.contactForm textarea {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  padding: 10px;
+  opacity: 80%;
+  border: none;
+  border-radius: 3px;
+  margin: 10px;
+  background-color: rgb(234, 233, 233);
+}
+
+.sendContactForm {
+  font-size: 16px;
+  font-family: 'Montserrat';
+  letter-spacing: 0.2em;
+  padding: 15px 20px;
+  border-radius: 3px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  background-color: rgb(73, 72, 72);
+  border: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.footer {
+  margin: 20px 0 0 0;
+}
 
 @media screen and (min-width: 760px) {
   body {
@@ -357,32 +395,8 @@ button a {
     margin: auto;
   }
 
-  .contactForm input,
-  .contactForm textarea {
-    font-size: 14px;
-    font-family: 'Montserrat';
-    padding: 10px;
-    opacity: 80%;
-    border: none;
-    border-radius: 3px;
-    margin: 10px;
-    background-color: rgb(234, 233, 233);
-  }
-
   .sendContactForm {
-    font-size: 16px;
-    font-family: 'Montserrat';
-    letter-spacing: 0.2em;
-    padding: 15px 20px;
-    border-radius: 3px;
     width: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    background-color: rgb(73, 72, 72);
-    border: none;
-    color: white;
-    transition: 0.3s ease-in-out;
   }
 
   .sendContactForm:hover {
