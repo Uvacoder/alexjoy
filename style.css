@@ -190,6 +190,7 @@ button a {
 
 .videoReel {
   width: 90vw;
+  height: 40vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -443,7 +444,7 @@ button a {
     margin-left: 5%;
     visibility: visible;
     /* margin-top: 10vh; */
-    background-image: url('AlexPucci2.png');
+    background-image: url('photos/mains.png');
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -769,10 +770,13 @@ button a {
 }
 
 @media screen and (min-width: 1000px) {
+  .homePage {
+    margin-top: 4%;
+  }
   .homePageOverlay {
     margin-left: 10%;
-    margin-top: 8vh;
-    height: 92vh;
+    margin-top: 0;
+    height: 100vh;
     width: 100vw;
     background-size: contain;
     float: bottom right;
@@ -788,6 +792,9 @@ button a {
 }
 
 @media screen and (min-width: 1370px) {
+  .homePage {
+    margin-top: 2%;
+  }
   .homePageOverlay {
     margin-left: 5%;
     margin-top: 8vh;
