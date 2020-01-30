@@ -70,6 +70,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: 999;
 }
 .navigationBar {
   margin: 0;
@@ -142,8 +143,8 @@ button a {
 }
 
 .homePage {
-  height: 93vh;
-  margin-top: 7%;
+  height: 92vh;
+  margin-top: 60px;
   background-image: url(photos/laugh.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -155,7 +156,7 @@ button a {
 }
 
 .mainTitleSection {
-  padding-top: 75vh;
+  padding-top: 70vh;
   color: white;
   text-align: center;
 }
@@ -164,6 +165,10 @@ button a {
   font-size: 1.8em;
   letter-spacing: 0.2em;
   margin: 10px;
+}
+
+.nameLine {
+  display: none;
 }
 
 .tagline {
@@ -220,7 +225,7 @@ button a {
   opacity: 0.9;
   width: 70%;
   height: 12%;
-  margin: 50% 15% 0;
+  margin: 65% 15% 0;
 }
 
 .activeOverlay {
@@ -314,7 +319,12 @@ button a {
     flex-flow: unset;
   }
 
+  #homeLink {
+    display: none;
+  }
+
   .nameLine {
+    display: block;
     visibility: hidden;
     transition: all 0.9s ease;
     transform: scale(0);
@@ -328,6 +338,7 @@ button a {
 
   .moveToTop {
     visibility: visible;
+    height: 100%;
     transition: all 0.9s ease;
     transform: scale(1);
   }
