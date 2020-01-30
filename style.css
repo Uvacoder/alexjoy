@@ -270,7 +270,8 @@ button a {
 }
 
 .footer {
-  margin: 20px 0 0 0;
+  font-size: 12px;
+  margin: 14% 0 0 0;
 }
 
 @media screen and (min-width: 760px) {
@@ -438,13 +439,11 @@ button a {
   }
 
   .homePageOverlay {
-    /* margin-top: 5vh; */
     height: 100vh;
     width: 80vw;
     margin-left: 5%;
     visibility: visible;
-    /* margin-top: 10vh; */
-    background-image: url('photos/mains.png');
+    background-image: url('photos/main.png');
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -760,6 +759,7 @@ button a {
     padding: 10px;
     width: 100%;
     display: flex;
+    font-size: 16px;
     justify-content: center;
   }
 
@@ -776,7 +776,8 @@ button a {
   .homePageOverlay {
     margin-left: 10%;
     margin-top: 0;
-    height: 100vh;
+    margin-top: 5vh;
+    height: 95vh;
     width: 100vw;
     background-size: contain;
     float: bottom right;
@@ -797,8 +798,8 @@ button a {
   }
   .homePageOverlay {
     margin-left: 5%;
-    margin-top: 8vh;
-    height: 92vh;
+    margin-top: 4vh;
+    height: 96vh;
     width: 100vw;
     background-size: contain;
     float: bottom right;
@@ -820,6 +821,8 @@ button a {
 @media screen and (min-width: 1600px) {
   .homePageOverlay {
     margin-left: 2%;
+    margin-top: 2vh;
+    height: 98vh;
   }
   .mainTitleLine {
     font-size: 3em;
