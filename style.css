@@ -173,7 +173,7 @@ button a {
 }
 
 .tagline {
-  font-size: 1.1em;
+  font-size: 1em;
   margin: 10px;
 }
 
@@ -279,7 +279,12 @@ button a {
 
 .footer {
   font-size: 12px;
-  margin: 14% 0 0 0;
+  margin: 14% 0 1% 0;
+}
+
+.webLink {
+  color: black;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 760px) {
@@ -460,7 +465,6 @@ button a {
     background-image: url('photos/main.png');
     background-repeat: no-repeat;
     background-position: right;
-    /* background-size: cover; */
   }
 
   .titleLine {
@@ -704,11 +708,6 @@ button a {
     display: flex;
     font-size: 16px;
     justify-content: center;
-  }
-
-  .webLink {
-    color: black;
-    text-decoration: none;
   }
 }
 
