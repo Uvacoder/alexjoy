@@ -57,6 +57,7 @@ body {
   width: 100%;
   height: 100%;
   opacity: 1;
+  z-index: 99;
   visibility: hidden;
 }
 .menu.show {
@@ -202,7 +203,9 @@ button a {
 
 .wellnessBlurb,
 .actInfo {
+  line-height: 1.5em;
   margin: 20px;
+  font-size: 14px;
 }
 
 .wellnessLinks {
@@ -305,7 +308,6 @@ button a {
     display: flex;
     background-color: white;
     position: fixed;
-    z-index: 99;
   }
 
   .navigationBar {
@@ -356,14 +358,10 @@ button a {
   }
 
   .pageLink:hover {
-    font-size: 1.3em;
+    color: #bbd4c9;
+    font-weight: 500;
     transition: all 0.4s ease-in-out;
-    margin: 10px;
   }
-
-  /* .menu .pageLink {
-    text-transform: none;
-  } */
 
   .menu .navItem {
     margin: 3.5%;
@@ -390,7 +388,7 @@ button a {
 
   .contactSection {
     grid-template-columns: 60% 40%;
-    grid-template-rows: 20% 75% 5%;
+    grid-template-rows: 20% 80%;
   }
 
   .actingPage {
@@ -439,6 +437,7 @@ button a {
   }
 
   .sendContactForm {
+    font-size: 18px;
     width: 20%;
   }
 
@@ -450,14 +449,18 @@ button a {
   }
 
   .homePageOverlay {
-    height: 100vh;
-    width: 80vw;
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-top: 5vh;
+    height: 95vh;
+    width: 100vw;
+    background-size: contain;
+    float: bottom right;
     visibility: visible;
     background-image: url('photos/main.png');
     background-repeat: no-repeat;
     background-position: right;
-    background-size: cover;
+    /* background-size: cover; */
   }
 
   .titleLine {
@@ -488,7 +491,6 @@ button a {
   .contactTitleLine {
     font-size: 2em;
     margin: 10% 0 0;
-    /* font-family: 'Sacramento', cursive; */
     font-family: 'Montserrat';
     letter-spacing: 0.2em;
     color: rgb(73, 72, 72);
@@ -496,7 +498,6 @@ button a {
   }
 
   .contactTitleLine {
-    margin: 0;
     padding: 2%;
     grid-row: 1;
     grid-column: 1 / span 2;
@@ -518,12 +519,10 @@ button a {
     width: 100vw;
     background-size: cover;
     display: grid;
-    /* grid-template-columns: 40% 60%; */
     grid-template-rows: 25% 68% 10%;
   }
 
   .wellnessSection {
-    /* grid-column: 2; */
     padding: 0 10%;
   }
 
@@ -591,75 +590,11 @@ button a {
     grid-row: 2;
     grid-column-start: 2;
     grid-column-end: 4;
-    /* display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
-
     position: relative;
-    /* from slick */
-    /* display: block;
-    box-sizing: border-box;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent; */
   }
-
-  /* .galleryList {
-    position: relative;
-
-    display: block;
-    overflow: hidden;
-
-    margin: 0;
-    padding: 0;
-  }
-
-  .galleryList:focus {
-    outline: none;
-  }
-
-  .allPhotos .galleryTrack,
-  .allPhotos .galleryList {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  .galleryTrack {
-    position: relative;
-    top: 0;
-    left: 0;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .galleryTrack:before,
-  .galleryTrack:after {
-    display: table;
-
-    content: '';
-  }
-  .galleryTrack:after {
-    clear: both;
-  }
-  [dir='rtl'] .activeMedia {
-    float: center;
-  } */
-  /* .slick-loading .galleryTrack {
-    visibility: hidden;
-  } */
 
   .allPhotos {
     margin-top: 20px;
@@ -716,7 +651,7 @@ button a {
   }
 
   .activeMedia {
-    width: 31%;
+    width: 40%;
   }
 
   .activeMedia .activeOverlay,
@@ -762,10 +697,7 @@ button a {
   .footer {
     grid-column: 1 / span 2;
     grid-row: 2;
-    /* margin-top: 5%; */
-    margin-left: auto;
-    margin-right: auto;
-    /* position: fixed; */
+    margin: 1% auto 0;
     bottom: 0;
     padding: 10px;
     width: 100%;
@@ -801,9 +733,16 @@ button a {
     margin: 0 10%;
     text-align: left;
   }
+  .contactPhoto {
+    width: 70%;
+  }
+  .contactForm input,
+  .contactForm textarea {
+    font-size: 16px;
+  }
 }
 
-@media screen and (min-width: 1370px) {
+@media screen and (min-width: 1360px) {
   .homePage {
     margin-top: 2%;
   }
@@ -824,8 +763,15 @@ button a {
     margin: 0 5%;
     text-align: center;
   }
+  .activeMedia {
+    width: 35%;
+  }
   .contactTitleLine {
     margin: 5% 0 0;
+  }
+  .contactForm input,
+  .contactForm textarea {
+    font-size: 18px;
   }
 }
 
