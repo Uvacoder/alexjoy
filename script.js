@@ -32,7 +32,7 @@ $('nav')
     showMenu = false;
     let section = $(this).attr('href');
     $('html, body').animate({
-      scrollTop: $(section).offset().top - 40
+      scrollTop: $(section).offset().top - 60
     });
   });
 
