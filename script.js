@@ -2,6 +2,7 @@ const menuButton = document.querySelector('.menuButton');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.navigationBar');
 const navItems = document.querySelectorAll('.navItem');
+const mobile = window.matchMedia('(max-width: 760px)');
 
 let showMenu = false;
 menuButton.addEventListener('click', toggleMenu);
@@ -31,20 +32,20 @@ $('nav')
     navItems.forEach(item => item.classList.remove('show'));
     showMenu = false;
     let section = $(this).attr('href');
-    $('html, body').animate({
-      scrollTop: $(section).offset().top - 60
-    });
+    if ($(window).width() < 760) {
+      $('html, body').animate({
+        scrollTop: $(section).offset().top - 70
+      });
+    } else {
+      $('html, body').animate({
+        scrollTop: $(section).offset().top
+      });
+    }
   });
 
 function handlePage() {
   handleIconClick();
 }
-
-$('.videoPlayer').hide();
-$('#viewDemo').click(function(e) {
-  e.preventDefault();
-  $('.videoPlayer').fadeIn();
-});
 
 $(handlePage);
 
