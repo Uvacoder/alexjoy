@@ -259,7 +259,7 @@ button a {
   background-color: rgb(234, 233, 233);
 }
 
-.sendContactForm {
+#sendContactForm {
   font-size: 16px;
   font-family: 'Montserrat';
   letter-spacing: 0.2em;
@@ -437,12 +437,12 @@ button a {
     margin: auto;
   }
 
-  .sendContactForm {
+  #sendContactForm {
     font-size: 18px;
     width: 20%;
   }
 
-  .sendContactForm:hover {
+  #sendContactForm:hover {
     background-color: #bbd4c9;
     color: #464b51;
     cursor: pointer;
