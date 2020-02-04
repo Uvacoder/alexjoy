@@ -56,6 +56,10 @@ function isScrolled() {
   return docViewTop > 0;
 }
 
+function sent() {
+  document.getElementByClass('sendContactForm').innerHTML('SENT!');
+}
+
 $(document).ready(function() {
   $(window).scroll(function() {
     if (isScrolled() === true) {
