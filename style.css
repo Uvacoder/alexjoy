@@ -204,7 +204,8 @@ button a {
   font-size: 16px;
 }
 
-.wellnessLinks {
+.wellnessLinks,
+.book {
   width: 100vw;
 }
 
@@ -534,7 +535,8 @@ button a {
 
   .wellnessTitle,
   .actingPageTitle,
-  .photoPageTitle {
+  .photoPageTitle,
+  .bookTitle {
     grid-row: 1;
     grid-column: 1 / span 2;
     font-family: 'Montserrat';
