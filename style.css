@@ -205,8 +205,13 @@ button a {
 }
 
 .wellnessLinks,
-.book {
+.book,
+.onDemand {
   width: 100vw;
+}
+
+.onDemand {
+  min-height: 100vh;
 }
 
 .thumb {
@@ -536,7 +541,8 @@ button a {
   .wellnessTitle,
   .actingPageTitle,
   .photoPageTitle,
-  .bookTitle {
+  .bookTitle,
+  .onDemandTitle {
     grid-row: 1;
     grid-column: 1 / span 2;
     font-family: 'Montserrat';
@@ -577,7 +583,6 @@ button a {
   }
 
   .container-fluid {
-    background-color: pink;
     display: none;
   }
 
